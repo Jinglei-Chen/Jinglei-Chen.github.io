@@ -1,0 +1,132 @@
+/* 简洁明快风格 CSS - 字体调整 */
+:root {
+    --primary-text: #222;
+    --secondary-text: #555;
+    --accent-color: #008080; 
+    --light-bg: #F9F9F9;
+    --border-color: #DDD;
+}
+
+body {
+    /* 增大字体至 15px */
+    font-family: 'Georgia', 'Times New Roman', serif; 
+    font-size: 15px; 
+    line-height: 1.6; /* 略微减小行高以适应增大后的字体 */
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: var(--primary-text);
+}
+
+.container {
+    max-width: 800px; 
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* 导航栏样式 */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--secondary-text);
+    margin: 0 20px;
+    font-size: 1.05em;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+/* 标题样式：突出重点 */
+h1 {
+    font-size: 2.8em; 
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+    text-align: center; /* 主页标题居中 */
+}
+
+/* 栏目大标题 */
+h2 {
+    font-size: 1.7em;
+    font-weight: 500;
+    color: var(--primary-text);
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--accent-color); 
+    margin-bottom: 25px;
+}
+
+/* 个人信息 (Landing Page 风格) */
+.contact-info {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+.contact-info p {
+    font-size: 1.1em; 
+    color: var(--secondary-text);
+}
+
+/* 经历模块 */
+.section-content {
+    margin-top: 0;
+}
+.experience-item {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border-left: 2px solid var(--border-color); 
+}
+.experience-item h3 {
+    font-size: 1.2em; 
+    margin: 0 0 5px;
+    color: var(--primary-text);
+    font-weight: 600;
+}
+.details {
+    font-size: 1em; /* 细节文字增大至 1em */
+    color: var(--secondary-text);
+    margin: 5px 0;
+}
+
+/* 隐藏不活动的内容模块 */
+.content-section {
+    display: none;
+    padding-top: 20px;
+}
+.content-section.active {
+    display: block;
+}
+
+/* ... (其他如 key-point, hobbies-gallery, footer 样式保持不变) ... */
+.key-point {
+    margin-top: 10px;
+    font-size: 1em; /* 正文列表增大至 1em */
+    padding: 5px 0;
+}
+.key-point ul {
+    list-style: square;
+    margin: 5px 0 0 15px;
+    padding: 0;
+}
+/* ... */
+.hobby-card {
+    background-color: var(--light-bg);
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1em; /* 增大字体 */
+}
+/* ... */
