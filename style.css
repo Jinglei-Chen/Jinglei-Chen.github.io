@@ -170,6 +170,7 @@ h1 {
     text-decoration: underline;
     font-weight: bold;
 }
+
 /* 页脚布局优化 */
 footer {
     margin-top: 80px;
@@ -186,7 +187,7 @@ footer {
 
 /* 统计地图容器样式 */
 .stats-container {
-    width: 220px; /* 限制地图宽度，避免在大屏幕上显得太突兀 */
+    width: 280px; /* 限制地图宽度，避免在大屏幕上显得太突兀 */
     opacity: 0.6;  /* 默认淡化显示，增加高级感 */
     transition: opacity 0.3s ease;
 }
